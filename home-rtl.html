@@ -136,9 +136,9 @@
     </header>
 
     <section class="full-window-height">
-            <video autoplay muted loop id="myVideo">
-                <source src="images/V.mp4" type="video/mp4">
-            </video>
+         <video autoplay muted loop id="myVideo">
+             <source src="images/V.mp4" type="video/mp4">
+         </video>
     </section>
 
     <section class="our-activities section section-white about-us">
@@ -668,6 +668,12 @@
                 video.pause();
                 btn.innerHTML = "Play";
             }
+        }
+
+        var isMobile = window.orientation > -1;
+        if (isMobile == true)
+        {
+            $("#myVideo").html('<source src="images/MV.mp4" type="video/mp4">');
         }
     </script>
     <script src="js/jquery.magnific-popup.min.js"></script>
