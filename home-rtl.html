@@ -137,7 +137,7 @@
 
     <section class="full-window-height">
          <video autoplay muted loop id="myVideo">
-             <source src="images/V.mp4" type="video/mp4">
+            
          </video>
     </section>
 
@@ -674,6 +674,8 @@
         if (isMobile == true)
         {
             $("#myVideo").html('<source src="images/MV.mp4" type="video/mp4">');
+        } else {
+            $("#myVideo").html('<source src="images/V.mp4" type="video/mp4">');
         }
     </script>
     <script src="js/jquery.magnific-popup.min.js"></script>
